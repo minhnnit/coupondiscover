@@ -9,34 +9,30 @@
 }
 body
 {
-    background-color: #fff;
-}
-/*header*/
-header
-{
-    height: 88px;
+    background: #fff;
     width: 100%;
-    background-color: #045770;
-    display: block;
-    padding-top: 12px;
 }
-.main, .navtop
+header{
+    height: 87px;
+    width: 100%;
+    background-color: #213b5c;
+    display: block;
+    padding-top: 15px;
+}
+.content
 {
-    max-width: 1140px;
-    margin: auto;
-    position: relative;
+    width: 100%;
+    background-color: white;
 }
 .main
 {
-    max-height: 3160px ;
+    max-width: 1140px;
 }
-.navtop
-{
+.navtop {
     position: relative;
-    height: 65px;
+    height: 48px;
 }
-.logo
-{
+.logo {
     position: relative;
     display: block;
     width: 212px;
@@ -47,9 +43,9 @@ header
     background-position: left top;
     background-repeat: no-repeat;
     background-size: 58px 58px;
-}
 
-.logo li
+}
+logo li
 {
     display: block;
     list-style-type: none;
@@ -76,17 +72,18 @@ header
 
     text-align: right;
     width:100%;
-    height: 44px;
+    height: 50px;
     top: 20px;
 }
-.search-top input, .search-top button { height: 44px; }
-.search-top button
+nav .nav-search input
 {
-    color: #f82c73;
+    height: 50px;
 }
-.input-top {
+nav .nav-search .search-go
+{
+    height: 50px;
+}
 
-}
 .body-top {
     width: 100%;
     background-color: #259fc4;
@@ -143,7 +140,6 @@ header
     font-weight: bold;
     font-size: 18px;
     margin-left:1px;
-    padding: 18px;
     color: #000;
     width: 70px;
 }
@@ -154,37 +150,72 @@ header
     padding-bottom: 35px;
     font-family: Arial;
 }
+.main-col-9
+{
+    margin-left: 16px;
+
+}
 .li-store
 {
     font-size: 14px;
     list-style-type: circle;
     line-height: 35px;
 }
-.popular-store
+.popular-store h1
 {
     border: 1px;
+    text-align: center;
+
 }
 .title-stores
 {
     text-align: center;
 }
-.title
-{
-    text-align: left;
 
+.main-col-3 {
+    margin-left: 60px;
+}
+
+.popular-store
+{
+    border: 1px solid #d7d7d7;
+}
+.li-store
+{
+    padding-left: 30px;
+    padding-right: 25px;
+}
+.operate a
+{
+    font-size: 19px;
+    font-weight: bold;
+    font-style: italic;
+}
+.operate
+{
+    padding-top: 30px;
+}
+.store-image
+{
+    margin-top: 20px;
+    margin-left: 10px;
 }
 .featured-stores
 {
     padding-top: 75px;
-    line-height: 35px;
     width: 100%;
-    padding-left:110px;
-    padding-right: 50px;
+    margin-left: 10px;
 
 }
 .link-popular
 {
     padding-top: 30px;
+    line-height: 40px;
+}
+.footer
+{
+    width: 100%;
+    background-color: white;
 }
 .footer-bar {
     background-color: #259fc4;
@@ -193,10 +224,6 @@ header
     width: 100%;
     color: white;
     padding-top: 20px;
-    line-height: 30px;
-    padding-left: 90px;
-    padding-right: 80px;
-
 }
 .copyright
 {
@@ -204,349 +231,235 @@ header
     height: 40px;
 
 }
-.footer-search
-{
-    padding-right: 50px;
-}
 .copyright p
 {
     padding-top: 10px;
     text-align: right;
     margin-right: 60px;
 }
-.popular-store
-{
-    border: 1px solid #d7d7d7;
-    padding-left: 30px;
-    padding-right: 20px;
-}
-.main-col-3 {
-    margin-left: 60px}
-.footer-search
-{
-    margin: auto;
-    width: 100%;
-    height: 48px;
-}
-.footer-search input
-{
-    width: 250px;
-    font-size: 16px;
-}
-button .search-go
-{
-    background-color: #f82c73;
-}
 
-/*1024x309*/
-@media only screen and (max-width: 1024px){
-    .base
-    {
-        padding: 15px;
+@media only screen and (max-width: 1024px) {
+    body{
+        width: 1024px;
+        padding:15px;
     }
     .logo
     {
-        margin-left: 60px;
-    }
-    .search-body
-    {
-        margin-left: 150px;
-    }
-    .coupons
-    {
-        margin-left: 15px;
+        margin-left: 20px
     }
     .c-r-item .info .title
     {
-        font-size: 16px;
-        font-weight: bold;
-    }
-    .main-col-3
-    {
-        margin-left: 10px;
-    }
-    .featured-stores
-    {
-        padding-left: 35px;
-    }
-    .footer-bar
-    {
-        padding-left: 0px;
-        font-size: 13px;
-        padding-right: 50px;
-    }
-    .footer-search input
-    {
-        width: 200px;
-    }
-    .copyright p
-    {
-        text-align: right;
+        font-size: 15px;
     }
 }
-/*768x309*/
-@media only screen and (max-width: 768px) {
-    .logo .logo-bottom
+@media only screen and (max-width: 768px)
+{
+    body
     {
-        font-size: 30px;
-        top: 25px;
+        width: 768px;
+        padding: 15px;
+    }
+
+    .list-img img
+    {
+        margin-top: 10px;
     }
     .search-top
     {
-        margin-right: 40px;
+        margin-right: 30px;
     }
-    .top-title
+    nav .nav-search input
     {
-        font-size: 15pt;
-        padding-top: 35px;
-        padding-bottom: 10px;
-    }
-    .search-text p
-    {
-        font-size: 15px;
+        width: 300px;
+        margin-left: -150px;
     }
     .search-body input
     {
-        width: 500px;
-        height: 40px;
+        width: 550px;
+        margin-left: 70px;
+    }
+    .body-text
+    {
+        font-size: 11px;
     }
     .search-body button
     {
-        height: 40px;
-
-    }
-    .search-body
-    {
-        margin-left: 115px;
-    }
-    .body-text h1
-    {
-        font-size: 20px;
-        margin-top: -15px;
+        padding-top:15px;
     }
     .main-col-9
     {
-        margin-left: 55px;
+        margin-left: 60px;
+    }
+    .c-r-item .btn
+    {
+        float: none;
+        margin-left: 70px;
     }
     .title-stores
     {
-        font-size: 20px;
-        margin-top: -10px;
+        font-size: 18px;
     }
-    .link-popular
+    .link-popular a
     {
         font-size: 13px;
-        line-height: 15px;
+    }
+
+}
+@media only screen and (max-width: 425px)
+{
+    body
+    {
+        max-width: 425px;
+        padding: 5px;
+    }
+    .navtop
+    {
+        display: block;
+    }
+    .logo{
+        margin-left: 75px;
+    }
+    header
+    {
+        height: 150px;
+    }
+    .list-img img
+    {
+        margin-left: 20px;
+    }
+    .search-text
+    {
+        margin-left: 0px;
+        font-size: 15px;
+    }
+    .search-body input
+    {
+        width: 250px;
+        margin-left: 65px;
     }
     .c-r-item .wrap
     {
         text-align: center;
     }
-    .c-r-item .btn
+    .c-r-item .operate .btn
     {
-        float: none;
+        margin-left: 10px;
     }
-    .icon-search
+    .main-col-3
     {
-       margin-bottom: 25px ;
+        margin-left: 90px;
     }
-
-}
-/*425x318*/
-@media only screen and (max-width: 425px)
-{
-    .base
+    .link-popular a
     {
-        padding: 5px;
+        margin-left: 170px;
     }
-    .logo
+    .link-popular
     {
-        margin-left: 5px;
+        line-height: 15px;
     }
-    .col-md
+    .featured-stores
+    {
+        margin-top: -15px;
+    }
+    .footer-bar
     {
         text-align: center;
+        height: 170px;
+        line-height: 15px;
     }
-    .logo .logo-top
+    .copyright p
     {
-        font-size: 18px;
-        padding-bottom: 8px;
+        font-size: 13px;
+        margin-right: 0px;
     }
-    .logo .logo-bottom
+}
+@media only screen and (max-width: 375px) {
+    body
     {
-        font-size: 20px;
-        padding-top: 6px;
+        width: 375px;
     }
-    .search-top
+    .logo{
+        margin-left: 50px;
+    }
+    nav .nav-search input
     {
-        margin-right: 5px;
+        margin-left: -110px;
+        width: 260px;
     }
     .top-title
     {
         font-size: 18px;
-        padding-top: 10px;
-        margin-bottom: -50px;
-    }
-    .list-img img
-    {
-        width: 75px;
-        height: 80px;
     }
     .search-body input
     {
         width: 200px;
     }
-    .body-text h1
-    {
-        font-size: 18px;
-    }
     .c-r-item .wrap
     {
-        text-align: center;
-    }
-    .c-r-item .btn
-    {
-        float: none;
-    }
-    .coupons
-    {
-        padding-right: 50px;
-    }
-    .popular-store
-    {
-        margin-left: 100px;
-
-        font-size: 15px;
-    }
-    .li-store
-    {
-        line-height: 20px;
-        font-size: 13px;
-    }
-    .store-image
-    {
-        margin-left: 90px;
-    }
-    .footer-bar
-    {
-        height: 200px;
-        padding-right: 0px;
-        text-align: center;
-
-    }
-    .footer-search input
-    {
-        text-align: center;
-        margin-left:30px;
-     }
-
-    .footer-bar .col-4 {display: block !important;clear:both;font-size: 20px}
-    .contact-us
-    {
-        display: block;
-    }
-    .email
-    {
-        display: block;
-    }
-    .copyright p
-    {
-        font-size: 12px;
-    }
-    .footer-search input
-    {
-        margin-left: 40px;
-    }
-    .footer-bar
-    {
-        height: 250px;
-    }
-}
-
-/*375*309*/
-
-@media only screen and (max-width: 375px)
-{
-    .logo .logo-top
-    {
-        font-size:14px;
-    }
-    .logo .logo-bottom
-    {
-        font-size: 16px;
-    }
-    .search-body
-    {
-        margin-left: 75px;
-    }
-    .popular-store
-    {
-        margin-left: 70px;
-        margin-right: 15px;
-    }
-    .store-image
-    {
-      margin-left: 60px;
-    }
-    .copyright p{
-        margin-right: 30px;
-    }
-    .search-text p
-    {
-        margin-left: -10px;
-    }
-}
-@media only screen and (max-width: 320px)
-{
-    .logo .logo-top
-    {
-        margin-left: -10px;
-    }
-    .logo-bottom
-    {
-        margin-left: -10px;
-    }
-
-    .search-input
-    {
-        width: 100px;
-        margin-left: 50px;
-    }
-    .search-text p{
-        font-size: 13px;
-    }
-    .search-body
-    {
-        margin-left: 50px;
+        margin-right: 50px;
     }
     .popular-store h1
     {
-        font-size: 22px;
+        font-size: 20px;
     }
-    .li-store
-    {
-        font-size: 12px;
+    .li-store a{
+        font-size: 13px;
     }
     .main-col-3
     {
-        margin-left: 0px;
-        margin-right: 45px;
+        margin-left: 63px;
     }
-    .store-image
+    .link-popular
+    {
+        margin-left: -40px;
+    }
+    .copyright p
+    {
+        text-align: center;
+    }
+
+}
+@media only screen and (max-width: 320px)
+{
+    body{
+        width: 320px;
+        padding: 5px;
+    }
+    nav .nav-search input
+    {
+        margin-left: -80px;
+        width: 260px;
+    }
+    .logo{
+        margin-left: 30px;
+    }
+    .search-body input
     {
         margin-left: 40px;
     }
-    .copyright p{
-        text-align: center;
-    }
-    .footer-search input
+    .li-store
     {
-        margin-left: 35px;
+        margin-left: 3px;
+        line-height: 30px;
+
     }
+    .main-col-3
+    {
+        width: 220px;
+    }
+    .li-store a
+    {
+        font-size: 11px;
+
+    }
+    .store-image
+    {
+        margin-left: -15px;
+    }
+    .link-popular
+    {
+        margin-left: -50px;
+    }
+
+
 }
-
-
-
-
-
-
